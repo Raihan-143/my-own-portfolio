@@ -32,13 +32,13 @@ const Hero = () => {
 
             {/* Social Icons */}
             <div className="flex gap-4 justify-center sm:justify-start">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Raihan-143" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="text-2xl text-gray-700 dark:text-gray-200 hover:text-blue-600" />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/md-raihan-hasan-rana-61962328a/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-2xl text-gray-700 dark:text-gray-200 hover:text-blue-600" />
               </a>
-              <a href="https://facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/share/1DsyU8WuRM/" target="_blank" rel="noopener noreferrer">
                 <FaFacebook className="text-2xl text-gray-700 dark:text-gray-200 hover:text-blue-600" />
               </a>
               <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
