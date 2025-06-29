@@ -58,7 +58,7 @@ const sliderSettings = {
 
 const Projects = () => {
     return (
-        <section id="projects" className="bg-white dark:bg-gray-900 mt-10 px-4 md:px-10">
+        <section id="projects" className="py-20 px-4 bg-white dark:bg-gray-900  md:px-10">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 dark:text-white mb-14">
                     My <span className="text-blue-600 dark:text-blue-400">Projects</span>

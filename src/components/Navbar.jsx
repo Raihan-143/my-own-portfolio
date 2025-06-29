@@ -30,9 +30,10 @@ const Navbar = () => {
 
     const navLinks = (
         <>
-            <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
+            <li><Link to="/" smooth={true} duration={500}>Home</Link></li>
             <li><Link to="about" smooth={true} duration={500}>About</Link></li>
             <li><Link to="skills" smooth={true} duration={500}>Skills</Link></li>
+            <li><Link to="education" smooth={true} duration={500}>Education</Link></li>
             <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
             <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
         </>
@@ -56,9 +57,19 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl font-bold text-blue-600 dark:text-blue-400">
+                <div className="flex items-center space-x-2">
+                    <img src="/port-logo1.png" alt="logo" className="h-6 w-auto" />
+                    <NavLink
+                        to="/"
+                        className="btn btn-ghost normal-case text-xl font-bold text-blue-600 dark:text-blue-400"
+                    >
+                        Rana.Dev
+                    </NavLink>
+                </div>
+
+                {/* <a className="btn btn-ghost normal-case text-xl font-bold text-blue-600 dark:text-blue-400">
                     Rana.Dev
-                </a>
+                </a> */}
             </div>
 
             {/* Desktop Menu */}
@@ -82,7 +93,7 @@ const Navbar = () => {
                     download
                     className="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition"
                 >
-                     Resume
+                    Resume
                 </a>
             </div>
         </div>

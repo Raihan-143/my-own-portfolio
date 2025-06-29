@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 md:px-12 bg-white dark:bg-gray-900 transition-colors duration-300 mt-5">
+    <section className="min-h-screen flex items-center justify-center py-20 px-4 bg-white dark:bg-gray-900 md:px-10 transition-colors duration-300 mt-5">
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-8">
         {/* Text Section */}
         <motion.div

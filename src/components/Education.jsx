@@ -7,7 +7,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className=" dark:bg-gray-900 px-4 md:px-10  transition duration-300 rounded-2xl mt-10"
+      className="py-20 px-4 bg-white dark:bg-gray-900 md:px-10  transition duration-300 rounded-2xl "
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 dark:text-white mb-12">
@@ -49,7 +49,7 @@ const Education = () => {
               </li>
               <li className="flex items-center text-gray-700 dark:text-gray-200">
                 <FaCheckCircle className="text-blue-500 mr-2" />
-                Built real-world MERN stack projects
+                Built real-time Banking System projects
               </li>
               <li className="flex items-center text-gray-700 dark:text-gray-200">
                 <FaCheckCircle className="text-blue-500 mr-2" />
