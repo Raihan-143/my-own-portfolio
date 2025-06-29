@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Bills Management App",
+    "live": "https://tangerine-sunshine-8227f0.netlify.app",
+    "githubClient": "https://github.com/raihanexample/bills-client",
+    "githubServer": "https://github.com/raihanexample/bills-server",
+    "images": [
+      "/projects/bill1.png",
+      "/projects/bill2.png",
+      "/projects/bill3.png"
+    ],
+    "tech": ["React", "Firebase", "Tailwind"],
+    "description": "A full-stack app for managing monthly bills. It allows users to add, update, and track their bills.",
+    "challenges": [
+      "Implementing authentication with Firebase",
+      "Conditional UI rendering based on payment status"
+    ],
+    "improvements": [
+      "Add payment gateway integration",
+      "Build dark/light theme toggle"
+    ]
+  },
+  {
+    "name": "Virtual Bookshelf",
+    "live": "https://bespoke-chaja-0c4a6e.netlify.app",
+    "githubClient": "https://github.com/raihanexample/books-client",
+    "githubServer": "https://github.com/raihanexample/books-server",
+    "images": [
+      "/projects/book1.png",
+      "/projects/book2.png",
+      "/projects/book3.png"
+    ],
+    "tech": ["React", "Express", "MongoDB"],
+    "description": "A digital platform to store and manage your book collection.",
+    "challenges": [
+      "Managing nested state for categories and filtering",
+      "Handling search and pagination"
+    ],
+    "improvements": [
+      "Add rating and reviews feature",
+      "Enhance mobile responsiveness"
+    ]
+  },
+  {
+    "name": "Roommate Finder",
+    "live": "https://roommatefinder.vercel.app",
+    "githubClient": "https://github.com/raihanexample/roommate-client",
+    "githubServer": "https://github.com/raihanexample/roommate-server",
+    "images": [
+      "/projects/room1.png",
+      "/projects/room2.png",
+      "/projects/room3.png"
+    ],
+    "tech": ["MERN", "JWT", "Tailwind"],
+    "description": "A platform to find and connect with roommates easily.",
+    "challenges": [
+      "Setting up protected routes with JWT",
+      "Implementing search and filtering logic in MongoDB"
+    ],
+    "improvements": [
+      "Add real-time chat feature",
+      "Include map-based location filtering"
+    ]
+  }
+]

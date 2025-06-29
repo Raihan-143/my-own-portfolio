@@ -2,31 +2,32 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { NavLink } from "react-router";
+import ThemeToggleButton from "./ThemeToggle";
 
 const Navbar = () => {
-    const [darkMode, setDarkMode] = useState(false);
+    // const [darkMode, setDarkMode] = useState(false);
 
-    // Load theme on first load
-    useEffect(() => {
-        const storedTheme = localStorage.getItem("theme");
-        if (storedTheme === "dark") {
-            document.documentElement.classList.add("dark");
-            setDarkMode(true);
-        }
-    }, []);
+    // // Load theme on first load
+    // useEffect(() => {
+    //     const storedTheme = localStorage.getItem("theme");
+    //     if (storedTheme === "dark") {
+    //         document.documentElement.classList.add("dark");
+    //         setDarkMode(true);
+    //     }
+    // }, []);
 
-    // Toggle theme
-    const handleToggle = () => {
-        const newMode = !darkMode;
-        setDarkMode(newMode);
-        if (newMode) {
-            document.documentElement.classList.add("dark");
-            localStorage.setItem("theme", "dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("theme", "light");
-        }
-    };
+    // // Toggle theme
+    // const handleToggle = () => {
+    //     const newMode = !darkMode;
+    //     setDarkMode(newMode);
+    //     if (newMode) {
+    //         document.documentElement.classList.add("dark");
+    //         localStorage.setItem("theme", "dark");
+    //     } else {
+    //         document.documentElement.classList.remove("dark");
+    //         localStorage.setItem("theme", "light");
+    //     }
+    // };
 
     const navLinks = (
         <>
@@ -58,7 +59,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex items-center space-x-2">
-                    <img src="/port-logo1.png" alt="logo" className="h-6 w-auto" />
+                    <img src="/port-logo1.png" alt="logo" className="w-[50px]" />
                     <NavLink
                         to="/"
                         className="btn btn-ghost normal-case text-xl font-bold text-blue-600 dark:text-blue-400"
@@ -81,13 +82,14 @@ const Navbar = () => {
 
             {/* Dark Mode Toggle */}
             <div className="navbar-end pr-2 gap-2">
-                <button
+                {/* <button
                     onClick={handleToggle}
                     className="btn btn-sm btn-circle"
                     title="Toggle Theme"
                 >
                     {darkMode ? <FaSun /> : <FaMoon />}
-                </button>
+                </button> */}
+                <ThemeToggleButton></ThemeToggleButton>
                 <a
                     href="/resume.pdf" // Change this to your actual resume file path
                     download

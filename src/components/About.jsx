@@ -5,12 +5,26 @@ const About = () => {
   return (
     <section
       id="about"
-      className=" py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-300"
+      className="py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-300"
     >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        {/* Left - Text */}
+        {/* Left - Image (now comes first) */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="flex justify-center md:justify-start"
+        >
+          <img
+            src="/first_img.jpg"
+            alt="About Rana"
+            className="rounded-2xl w-[300px] md:w-[380px] shadow-xl border border-blue-500"
+          />
+        </motion.div>
+
+        {/* Right - Text */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           className="text-gray-800 dark:text-gray-200"
@@ -41,20 +55,6 @@ const About = () => {
               I’m always hungry to learn something new every day.
             </p>
           </div>
-        </motion.div>
-
-        {/* Right - Image */}
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          className="flex justify-center"
-        >
-          <img
-            src="/first_img.jpg"
-            alt="About Rana"
-            className="rounded-2xl w-[300px] md:w-[380px] shadow-xl border border-blue-500"
-          />
         </motion.div>
       </div>
     </section>

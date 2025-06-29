@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt,FaWhatsapp, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 
@@ -72,7 +72,18 @@ const Contact = () => {
                 <div>
                   <p className="font-semibold text-gray-800 dark:text-white">Phone</p>
                   <a href="tel:+880123456789" className="text-green-600 hover:underline text-sm">
-                    +880 1234-56789
+                    +880 1600019673
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="bg-green-100 p-3 rounded-lg">
+                  <FaWhatsapp className="text-green-600" />
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-800 dark:text-white">What's Up</p>
+                  <a href="tel:+880123456789" className="text-green-600 hover:underline text-sm">
+                    +880 1600019673
                   </a>
                 </div>
               </div>
